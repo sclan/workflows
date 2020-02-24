@@ -112,6 +112,7 @@ task alignment {
              --outFileNamePrefix ${output_prefix} \
              --twopassMode Basic \
              --limitBAMsortRAM ${(memory_gb - 2) + "000000000"} \
+             --limitSjdbInsertNsj 20000000 \
              ${"--outSAMattrRGline " + read_groups}
     }
 
